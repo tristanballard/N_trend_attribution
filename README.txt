@@ -28,7 +28,6 @@ TN_model.rds: Fitted model R object created in fit.model.R.
 TN_model_Sinha2016.rds: Fitted model R object corresponding to Sinha et al. 2016 final model.
 
 
-
 DATA: 
 Note that many of the station IDs in the files begin with '0', e.g. '01111500', which can accidentally be converted to '1111500' if converting formats/copy and pasting. Blame USGS.
 
@@ -53,7 +52,6 @@ DATA/GAGESII/PRECIP_TEMPERATURE:
 This folder contains the GAGESII PRISM monthly mean temperature [degC], monthly mean precip [mm], and annual amount of extreme precip [mm], defined as the sum of precip on days where the precip exceeded the  95th percentile of historical (1981-2010) daily precipitation with the percentile threshold calculated only with days having at least 1mm of precip to remove 'dry' days. All of the values have been aggregated over each GAGESII basin area. 
 
 
-
 DATA/HUC8:
 HUC8.landuse.csv: land use classifications for each HUC8 watershed from the 2006 NCLD database.
 
@@ -72,7 +70,6 @@ HUC8.TN.rds: 1987-2012 annual TN fluxes [kg/km2] estimated by applying the TN_mo
 HUC8.TN.Sinha2016.rds: 1987-2012 annual TN fluxes [kg/km2] estimated by applying the model from Sinha et al. 2016 to annual HUC8 covariate inputs. 
 
 
-
 DATA/NASQAN:
 b____.png (and others): Map showing the location of this NASQAN station. Created in estimate.nasqan.TN.R script.
 
@@ -83,7 +80,10 @@ nasqan.TN.rds: 1987-2012 annual TN fluxes [kg/km2] estimated by aggregating HUC8
 nasqan.TN.observed.rds: 1987-2012 observed (WRTDS-estimated) annual TN fluxes [kg/km2].
 
 
+
 DATA/SHAPEFILES:
+*** Shapefile data is 365MB, so this folder is available for download at 'https://drive.google.com/file/d/10xVf4Sm9CrTPTo1lcTCJ-ZzC_Cwmw8Dp/view?usp=sharing' contact me if the link is defunct*** 
+
 GAGESII_basins.shp: shapefiles for the 123 GAGES sites.
 
 shapefile.HUC2.rds: 18 continental US HUC2 shapefiles. 
@@ -91,7 +91,3 @@ shapefile.HUC2.rds: 18 continental US HUC2 shapefiles.
 WBDHU8_Reg_1_18.shp: 2,107 HUC8 watershed boundary shapefiles and various info about each watershed (e.g. basin area, full name).
 
 DATA/SHAPEFILES/NASQAN: shapefiles for various NASQAN watersheds.
-
-
-
-
